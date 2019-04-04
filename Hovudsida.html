@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="no">
+	<head>
+		<meta charset="UTF-8">
+		<title>Chelsea FC</title>
+		<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: black;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / 7;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1">Chelsea FC</div>
+</div>
+		<style>
+			h1 {
+				text-align: center;
+			}
+		</style>
+		<div style="background-color: black; color: white">
+		<p>Chelsea Football Club (stifta 1905) er eit fotballag frå bydelen Chelsea i London i England. Klubben spelar i Premier League. «The Blues», som er kallenamnet til Chelsea, spelar heimekampane sine på Stamford Bridge. Heimebana ligg ikkje i bydelen Chelsea, men i nabobydelen Fulham, som ligg vest i London. Klubben vart stifta i 1905, og vart vald inn i The Football League det same året. Klubben sin eigar og styreformann er den russiske milliardæren Roman Abramovitsj . Han overtok klubben i 2003. Etter at Abramovitsj overtok, har han gjeve klubben tilgang til romsleg med pengemidlar. Mellom anna har klubben difor kunna kjøpa inn mange gode spelarar. Chelsea vann ligagull i 2004/05 sesongen og i 2005/06 sesongen.Les meir <a href="fakta.html" style="color: white">her.</a> </p>
+		</div>
+	</head> 
+<body>
+<style> 
+main {
+display: grid; 
+grid-template-columns: 417px 417px 417px;
+grid-gap:15px;
+}
+main > article > img { width: 100%;
+} 
+</style>
+
+	<main>
+    <article2><a href="https://www.chelseafc.com/en"><img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Stamford_Bridge_Clear_Skies.JPG" width="417px" height="218px"></a> 
+	<p>Trykk på bildet for å besøke nettsida til Chelsea.</p></article2>
+ <article> <a href="bilder.html"><img src="https://media.contentapi.ea.com/content/dam/ea/easports/fifa/ultimate-team/campaigns/2018/tots/epl/fut18-tots-premierleague-hero-bg-xs.jpg" width="417px" height="218px"></a> <p>Trykk på bildet for å sjå bilder frå Chelsea kampar denne sesongen.</p></article> 
+ <article><a href="spelarar.html"><img src="4.jpg" width="417px" height="218px"></a><p>Trykk på bildet for å sjå på Chelsea spelarar.</p></article> 
+ <article><a href="Meritter.html"><img src="drogba.jpg" width="417px" height="218px"></a><p>Trykk på bildet for å sjå på alle trofear Chelsea har vunnet gjennom alle åra. </p></article>
+ <article><a href="kampar.html"><img src="sarri.jpg" width="417px" height="218px"></a><p>Trykk på bildet for å få sjå på resultata Chelsea har hatt mot andre klubber, og kva kamper som kjem.</p></article>
+<article><a href=""><iframe width="417" height="218" src="https://youtu.be/yiwY3pvZVzM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></a><p>Høgdepunkter frå ein av dei første kampane til Chelsea denne sesongen. Chelsea mot Arsenal</p></article>
+</main>
+	</head>
+
+ 	<body style="background-color: #3F4F54; color: white">
+		<p></p>
+	</body>
+
+		<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: url("https://cdn-imgix.headout.com/category/1371/image/32a00e73-aee6-446d-8dfd-d6d9dcf79e7b-333cb4e1da910002f45cdb855a082c95.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">This is Chelsea</h1>
+    <h3>We are the blues!</h3>
+  </div>
+</div>
+<p></p>
+<body>
+    <form id="skjema"> 
+      <input type="text" id="inpAvsender" required placeholder="kven er du?"> 
+      <input type="text" id="inpMening" required placeholder="kva seier du?"> 
+      <button type="submit" class="butt on">OK</button>
+  </form> 
+  <article id="txtMeldinger"></article>
+    <h1>Superchat</h1>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAd_V-LOPVQLH5kQu7N0IJNFjLMHJBmV8Q",
+    authDomain: "kult-f4fcc.firebaseapp.com",
+    databaseURL: "https://kult-f4fcc.firebaseio.com",
+    projectId: "kult-f4fcc",
+    storageBucket: "",
+    messagingSenderId: "198066965041"
+  };
+  firebase.initializeApp(config);
+</script>
+<script>
+  let database = firebase.database(); 
+  let meldinger = database.ref("meldinger"); 
+  let skjema = document. 
+  getElementById("skjema"); 
+  let inpAvsender = document. 
+  getElementById("inpAvsender");
+  let inpMening = document. 
+  getElementById("inpMening"); 
+  let txtMeldinger = document. 
+  getElementById("txtMeldinger"); 
+  function visMelding(snapshot) { 
+    let melding = snapshot.val(); 
+    let meldingTekst = `<p> 
+    <b>${melding.avsender}:</b> 
+    <i>${melding.tekst}</i>
+  </p>`; 
+txtMeldinger.innerHTML = txtMeldinger. 
+innerHTML + meldingTekst;
+}
+function regNyMelding(evt) { 
+  evt.preventDefault(); 
+  var nyMelding = { 
+    avsender: inpAvsender.value, 
+    tekst: inpMening.value
+};
+meldinger.push(nyMelding); 
+inpMening.value = " ";
+}
+meldinger.on("child_added", visMelding); 
+skjema.onsubmit = regNyMelding;
+
+</script>
+  </body>
+	
+</html>
